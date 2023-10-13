@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Project</title>
+        <!-- BS5 -->
+        <link rel="stylesheet"
+            href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- ANIMATE CSS  Ngoài sử dụng animate css kết hợp với bs thì ta có thể sử dụng với thư viện owl-carousel hoặc sử dụng thư viện slick-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- FONT GG -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&family=Work+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- VENOBOX CSS -->
+        <link rel="stylesheet" href="./css/venobox.min.css">
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="container-md">
+            <p class="text-end text-white mb-0">
+                <i class="fa-solid fa-phone"></i>
+                <span class="mx-3 pe-2 border-end">096.928.6240</span>
+                <i class="fa fa-search"></i>
+            </p>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#movieNavBar"
+                        aria-controls="movieNavBar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <i class="fa fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="movieNavBar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item line active">
+                                <a class="nav-link active" aria-current="page"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">what's on</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">shortcodes</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">news</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header id="headerFixed">
+            <nav class="navbar container navbar-expand-md">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#movieNavBar"
+                        aria-controls="movieNavBar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <i class="fa fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="movieNavBar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item line active">
+                                <a class="nav-link active" aria-current="page"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">what's on</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">shortcodes</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">news</a>
+                            </li>
+                            <li class="nav-item line">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- CAROUSEL -->
+        <section class="movieCarousel">
+            <div id="carouselMovie" class="carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="container carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMovie"
+                        data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMovie"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMovie"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="movieCrousel__overlay"></div>
+                        <div class="container carousel-caption">
+                            <div class="col-12 col-lg-9 p-0">
+                                <p class="animate__animated
+                                    animate__fadeInDown">ACTION, ADVENTURE,
+                                    FASTARY</p>
+                                <h2 class="animate__animated
+                                    animate__fadeInDown">End of the world: Part
+                                    I</h2>
+                                <p class="animate__animated
+                                    animate__fadeInDown">Lorem ipsum dolor sit
+                                    amet consectetur
+                                    adipisicing elit. Ut saepe illum obcaecati
+                                    deserunt magnam ea qui perspiciatis
+                                    praesentium laborum nostrum.</p>
+                                <div class="movieCrousel__trailer
+                                    animate__animated animate__fadeInUp">
+                                    <span>PG</span>
+                                    <button class="btn">
+                                        <span>
+                                            <i class="fa fa-play"></i>
+                                            PLAY TRAILER
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="movieCrousel__overlay"></div>
+                        <div class="container carousel-caption">
+                            <div class="col-12 col-lg-9 p-0">
+                                <p class="animate__animated
+                                    animate__fadeInDown">ACTION, ADVENTURE,
+                                    FASTARY</p>
+                                <h2 class="animate__animated
+                                    animate__fadeInDown">End of the world: Part
+                                    II</h2>
+                                <p class="animate__animated
+                                    animate__fadeInDown">Lorem ipsum dolor sit
+                                    amet consectetur
+                                    adipisicing elit. Ut saepe illum obcaecati
+                                    deserunt magnam ea qui perspiciatis
+                                    praesentium laborum nostrum.</p>
+                                <div class="movieCrousel__trailer
+                                    animate__animated animate__fadeInUp">
+                                    <span>PG</span>
+                                    <button class="btn">
+                                        <span>
+                                            <i class="fa fa-play"></i>
+                                            PLAY TRAILER
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="movieCrousel__overlay"></div>
+                        <div class="container carousel-caption">
+                            <div class="col-12 col-lg-9 p-0">
+                                <p class="animate__animated
+                                    animate__fadeInDown">ACTION, ADVENTURE,
+                                    FASTARY</p>
+                                <h2 class="animate__animated
+                                    animate__fadeInDown">End of the world: Part
+                                    III</h2>
+                                <p class="animate__animated
+                                    animate__fadeInDown">Lorem ipsum dolor sit
+                                    amet consectetur
+                                    adipisicing elit. Ut saepe illum obcaecati
+                                    deserunt magnam ea qui perspiciatis
+                                    praesentium laborum nostrum.</p>
+                                <div class="movieCrousel__trailer
+                                    animate__animated animate__fadeInUp">
+                                    <span>PG</span>
+                                    <button class="btn">
+                                        <span>
+                                            <i class="fa fa-play"></i>
+                                            PLAY TRAILER
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NEW IN -->
+        <section class="newIn section">
+            <div class="container">
+                <h2 class="title">New In</h2>
+                <div class="newIn__content container">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="newIn__img">
+                                <img src="./img/movie-1.jpg" alt="movie-1">
+                                <div class="newIn__overlay"></div>
+                                <div class="newIn__play">
+                                    <div>
+                                        <a href="#"><i class="fa fa-play"></i></a>
+                                        <a href="#">read more</a>
+                                        <p class="date">Released: 7 Mar, 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newIn__title mb-3 mb-md-0">
+                                <h3>The last post</h3>
+                                <div>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="newIn__img">
+                                <img src="./img/movie-2.jpg" alt="movie-2">
+                                <div class="newIn__overlay"></div>
+                                <div class="newIn__play">
+                                    <div>
+                                        <a href="#"><i class="fa fa-play"></i></a>
+                                        <a href="#">read more</a>
+                                        <p class="date">Released: 7 Mar, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newIn__title mb-3 mb-md-0">
+                                <h3>Dark and lonely</h3>
+                                <div>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="newIn__img">
+                                <img src="./img/movie-3.jpg" alt="movie-3">
+                                <div class="newIn__overlay"></div>
+                                <div class="newIn__play">
+                                    <div>
+                                        <a href="#"><i class="fa fa-play"></i></a>
+                                        <a href="#">read more</a>
+                                        <p class="date">Released: 7 Mar, 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newIn__title mb-3 mb-md-0">
+                                <h3>Venture</h3>
+                                <div>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="newIn__img">
+                                <img src="./img/movie-4.jpg" alt="movie-4">
+                                <div class="newIn__overlay"></div>
+                                <div class="newIn__play">
+                                    <div>
+                                        <a href="#"><i class="fa fa-play"></i></a>
+                                        <a href="#">read more</a>
+                                        <p class="date">Released: 7 Mar, 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newIn__title mb-3 mb-md-0">
+                                <h3>Hush</h3>
+                                <div>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SHOWTIMES -->
+        <section class="showTimes section">
+            <div class="container-md">
+                <nav>
+                    <div class="nav nav-tabs flex-column flex-sm-row" id="nav-tab" role="tablist">
+                        <button class="nav-link line active" id="mon-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-mon"
+                            type="button" role="tab" aria-controls="nav-mon"
+                            aria-selected="true"><span>MON</span></button>
+                        <button class="nav-link line" id="tue-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-tue"
+                            type="button" role="tab" aria-controls="nav-tue"
+                            aria-selected="false"><span>TUE</span></button>
+                        <button class="nav-link line" id="today-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-today"
+                            type="button" role="tab" aria-controls="nav-today"
+                            aria-selected="false"><span>TODAY</span></button>
+                        <button class="nav-link line" id="thu-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-thu"
+                            type="button" role="tab" aria-controls="nav-thu"
+                            aria-selected="false"><span>THU</span></button>
+                        <button class="nav-link line" id="fri-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-fri"
+                            type="button" role="tab" aria-controls="nav-fri"
+                            aria-selected="false"><span>FRI</span></button>
+                        <button class="nav-link line" id="sat-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-sat"
+                            type="button" role="tab" aria-controls="nav-sat"
+                            aria-selected="false"><span>SAT</span></button>
+                        <button class="nav-link line" id="sun-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-sun"
+                            type="button" role="tab" aria-controls="nav-sun"
+                            aria-selected="false"><span>SUN</span></button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-mon"
+                        role="tabpanel" aria-labelledby="mon-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-5.jpg"
+                                    alt="movie-5">
+                            </div>
+                            <div class="sol-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>Captain America: the First Avenger</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">12:30</button>
+                                            <button class="btn">14:30</button>
+                                            <button class="btn">16:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-6.jpg"
+                                    alt="movie-6">
+                            </div>
+                            <div class="sol-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">12:30</button>
+                                            <button class="btn">14:30</button>
+                                            <button class="btn">16:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-7.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="sol-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">12:30</button>
+                                            <button class="btn">14:30</button>
+                                            <button class="btn">16:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-8.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="sol-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-tue" role="tabpanel"
+                        aria-labelledby="tue-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-11.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">12:30</button>
+                                            <button class="btn">14:30</button>
+                                            <button class="btn">16:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-7.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">12:30</button>
+                                            <button class="btn">14:30</button>
+                                            <button class="btn">16:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-8.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-today" role="tabpanel"
+                        aria-labelledby="today-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-9.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-13.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-thu" role="tabpanel"
+                        aria-labelledby="thu-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-9.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-13.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-fri" role="tabpanel"
+                        aria-labelledby="dri-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-9.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-13.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sat" role="tabpanel"
+                        aria-labelledby="sat-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-9.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-13.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sun" role="tabpanel"
+                        aria-labelledby="sun-tab" tabindex="0">
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-9.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-5 showTimes__row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <img class="img-fluid" src="./img/movie-13.jpg"
+                                    alt="movie-7">
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <p>ACTION, ADVENTURE, FANTASY</p>
+                                <h3>It's over</h3>
+                                <p>European mercenaries seaching for black
+                                    powder become embroiled in the defense of
+                                    It's over of China against a horde of
+                                    monstrous creatures.</p>
+                                <p><a href="#">FULL SYNOPSIS <i class="fa
+                                            fa-angle-right"></i></a></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 d-lg-flex align-items-center
+                                        showTimes__viewing">
+                                        <span><i class="fa fa-clock"></i>
+                                            VIEWING TIMES</span>
+                                        <div class="div">
+                                            <button class="btn" disabled>10:30</button>
+                                            <button class="btn">20:30</button>
+                                            <button class="btn">21:30</button>
+                                            <button class="btn">22:30</button>
+                                            <button class="btn">23:30</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-3 text-start text-sm-end
+                                        showTimes__runningTimes">
+                                        <span>105 MINS</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- COMMING SOON -->
+        <section class="comingSoon section">
+            <div class="container">
+                <h2 class="title tiltle--white">coming soon</h2>
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6 comingSoon__title">
+                        <p>comey, crime</p>
+                        <h3>The Hangover Part III</h3>
+                        <div class="div">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>
+                                <i class="fa fa-calendar-alt mx-3"></i>
+                                30 Septemper 2020
+                            </span>
+                        </div>
+                        <p>When one of their own is kidnapped by an angry
+                            gangster, the Wolf Pack must track down Mr. Chow,
+                            who has escaped from prison and is on the run.</p>
+                        <a href="#">more info <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                        <a class="my-video-links" data-vbtype="video" data-maxwidth="70%" href="https://youtu.be/LfFJl_P2JW0">
+                            <div class="comingSoon__video">
+                                <img src="./img/slide-3-video.png"
+                                    alt="slide-3-video">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MOVIE LIST -->
+        <section class="movieList section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-lg-2 mb-3 mb-lg-0">
+                        <div class="movieList__item">
+                            <img class="img-fluid" src="./img/movie-9.jpg"
+                                alt="">
+                            <div class="movieList__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-3 mb-lg-0">
+                        <div class="movieList__item">
+                            <img class="img-fluid" src="./img/movie-8.jpg"
+                                alt="">
+                            <div class="movieList__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-3 mb-lg-0">
+                        <div class="movieList__item">
+                            <img class="img-fluid" src="./img/movie-11.jpg"
+                                alt="">
+                            <div class="movieList__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <div class="movieList__item">
+                            <img class="img-fluid" src="./img/movie-13.jpg"
+                                alt="">
+                            <div class="movieList__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <div class="movieList__item">
+                            <img class="img-fluid" src="./img/movie-12.jpg"
+                                alt="">
+                            <div class="movieList__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <div class="movieList__item">
+                            <img class="img-fluid" src="./img/movie-14.jpg"
+                                alt="">
+                            <div class="movieList__overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="contact section">
+            <div class="contact__content">
+                <p>If you need help ? Contact our support team on</p>
+                <a href="tel:096 928 6240">096 928 6240</a>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="row section">
+                    <div class="col-12 col-md-3">
+                        <h3>get in touch</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Give us feedback</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h3>about movie star</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Find us</a></li>
+                            <li><a href="#">Schedule</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h3>legal stuff</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h3>contact with us</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i>Facebbok</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i>Google +</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p>2023 &copy; Movie Project | by <span>Mai Văn Đoàn</span></p>
+                </div>
+            </div>
+            
+        </footer>
+
+        <!-- Thư viện hỗ trợ -->
+        <script src="./js/jquery.min.js"></script>
+        <!-- BS5 js -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- VENOBOX JS -->
+        <script src="./js/venobox.min.js"></script>
+        <script>
+            new VenoBox();
+            VenoBox({
+                selector: ".my-video-links"
+            });
+            // $(document).ready(function(){
+            //     $('.venobox').venobox();
+            // });
+            
+        </script>
+        <!-- MAIN JS -->
+        <script>
+            window.onscroll = function() {
+                // Code tạo hiệu ứng xuất hiện thanh nav khi scroll
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200  ){
+                    document.getElementById("headerFixed").style.transform = "translate(-50%, 0)";
+                } else {
+                    document.getElementById("headerFixed").style.transform = "translate(-50%, -100%)";
+                }
+            }
+
+        </script>
+    </body>
+</html>
